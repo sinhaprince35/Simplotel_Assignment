@@ -1,7 +1,6 @@
 # Simplotel_Assignment
-<hr>
-# Tech Stack
-<ol><li>HTML</li>
+<h2>Tech Stack Used</h2>
+<ul><li>HTML</li>
   <li>CSS</li>
-  </ol>
+  </ul>
   
