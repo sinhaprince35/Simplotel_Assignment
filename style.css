@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Outfit&family=Poppins&display=swap');
+
+/* --------Universal Style--------- */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #d9d7d7d9;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* ---------Container Styling --------- */
+.container {
+    margin: 1vh 10vh 1vh 10vh;
+}
+
+/* ----------Navbar Sections Styling -------- */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.menubar {
+    background-color: white;
+}
+
+ul {
+    width: 100%;
+    float: left;
+}
+
+li {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 7vh;
+    margin: 0 1rem;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 3vh;
+    color: black;
+    background-color: white;
+}
+
+.nav-icons {
+    height: 7vh;
+    position: absolute;
+    right: 5.6rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.icons {
+    height: 4vh;
+    width: 4vh;
+    margin: 0 .2rem;
+    background-color: white;
+}
+
+/* ------------Banner Sections Styling------- */
+.banner {
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(100deg,
+            hsla(324, 100%, 70%, 1) 0%,
+            hsla(46, 100%, 68%, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.banner-images {
+    background: url(./Assets/img1.jpg) no-repeat;
+    background-size: cover;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.banner-images>div {
+    width: 50vh;
+    padding: 2rem 8rem 2rem 2rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    background-color: rgba(224, 111, 111, 0.644);
+}
+
+.banner-images>div h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    background-color: transparent;
+
+}
+
+.banner>div p {
+    color: rgba(255, 255, 255, 0.845);
+    background-color: transparent;
+}
+
+/* ---------Products Section Styling --------- */
+.products {
+    background-size: cover;
+    height: 100%;
+    align-items: center;
+    background: linear-gradient(100deg,
+            hsla(324, 100%, 70%, 1) 0%,
+            hsla(46, 100%, 68%, 1) 100%);
+    margin-top: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* -------Products------ */
+h3 {
+    font-size: 6vh;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 2vh;
+    margin-bottom: 50px;
+    background: transparent;
+}
+
+/* ----------Products Title and Subtitle-------- */
+.product-title {
+    font-size: 3.5vh;
+    font-weight: bold;
+    background: transparent;
+}
+
+.sub-title {
+    background: transparent;
+}
+
+/* ---------Styling Card--------- */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 0 40px;
+    background: transparent;
+}
+
+.cards>div {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 20% 0 20%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.cards>div:hover {
+    margin-top: -10px;
+}
+
+/* --------Styling Images--------- */
+.img-container {
+    overflow: hidden;
+    background-color: red;
+    height: 230px;
+    border-radius: 0 20% 0 0;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------Styling Button--------- */
+button {
+    border: none;
+    border-radius: 200px;
+    padding: 15px 70px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    padding: 10%;
+}
+
+.btn :hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+    .container {
+        margin: 1vh 8vh 1vh 8vh;
+    }
+
+    .banner-images>div {
+        width: 50vh;
+        padding: 1rem 4rem 1rem 1rem;
+        margin-left: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    .banner-images>div h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+    }
+
+    li {
+        font-weight: 500;
+        line-height: 6vh;
+        margin: 0 1rem;
+        flex-wrap: wrap;
+    }
+
+    a {
+        font-size: 2.5vh;
+    }
+
+    .nav-icons {
+        height: 5.7vh;
+        right: 6rem;
+        gap: .7rem;
+    }
+
+    .icons {
+        height: 4vh;
+        width: 4vh;
+        margin: 0 .2rem;
+    }
+
+    .products {
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    h3 {
+        font-size: 6vh;
+        letter-spacing: 4px;
+        margin-top: 1.5vh;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        gap: 50px;
+    }
+
+    .cards>div {
+        padding: 10px;
+        border-radius: 0 15% 0 15%;
+        width: 250px;
+        gap: 5px;
+    }
+
+    .cards>div:hover {
+        margin-top: -10px;
+    }
+
+    .img-container {
+        height: 200px;
+        border-radius: 0 20% 0 0;
+    }
+
+    button {
+        padding: 15px 50px;
+        font-size: 25px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .container {
+        margin: .5vh 5vh .5vh 5vh;
+    }
+
+    .banner-images>div {
+        width: 25vh;
+        padding: 1rem 1rem 1rem 1rem;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .banner-images>div h1 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: .5rem;
+        letter-spacing: .3px;
+    }
+
+    li {
+        display: inline-block;
+        font-weight: 500;
+        line-height: 4vh;
+        margin: 0 1rem;
+        flex-wrap: wrap;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+
+    .nav-icons {
+        height: 5vh;
+        right: 3rem;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .icons {
+        height: 3vh;
+        width: 3vh;
+        margin: 0 .2rem;
+    }
+
+    .products {
+        background-size: cover;
+        height: 100%;
+        align-items: center;
+        margin-top: 2vh;
+    }
+
+    h3 {
+        font-size: 5vh;
+        letter-spacing: 2px;
+        margin-top: 1vh;
+        margin-bottom: 25px;
+    }
+
+    .cards {
+        gap: 45px;
+    }
+
+    .cards>div {
+        padding: 5px;
+        border-radius: 0 15% 0 15%;
+        width: 250px;
+        gap: 5px;
+    }
+
+    .cards>div:hover {
+        margin-top: -10px;
+    }
+
+    .img-container {
+        height: 150px;
+        border-radius: 0 20% 0 0;
+    }
+
+    button {
+        border-radius: 150px;
+        padding: 10px 50px;
+        font-size: 15px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+}
